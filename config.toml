@@ -44,7 +44,7 @@ publishdir = "public"
   # Biography section.
   # Section will only be displayed if `content/home/about.md` exists.
   [params.about]
-    interests = ["distributed systems", "parsing + compilers", "automation", "3d geometry", "math/stats", "streaming analytics"]
+    interests = ["distributed systems", "parsing + compilers", "polyglot software development", "automation", "3d geometry", "math", "streaming analytics", "comedy"]
     str_interests = "Interests"
     str_tools = "Current Tools"
 
