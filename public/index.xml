@@ -59,5 +59,15 @@
 </description>
     </item>
     
+    <item>
+      <title>Riak OCaml Client</title>
+      <link>http://blog.metadave.net/project/riak-ocaml-client/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.metadave.net/project/riak-ocaml-client/</guid>
+      <description>&lt;p&gt;riak-ocaml-client is a Riak Protobuffs-only client for OCaml.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
