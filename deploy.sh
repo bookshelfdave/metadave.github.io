@@ -18,4 +18,4 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
-git subtree push --prefix=public git@github.com:metadave/metadave.github.com.git gh-pages
+git subtree push --prefix=public git@github.com:metadave/metadave.github.io.git gh-pages
