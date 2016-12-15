@@ -1,5 +1,0 @@
-+++
-image = ""
-math = false
-tags = []
-+++
