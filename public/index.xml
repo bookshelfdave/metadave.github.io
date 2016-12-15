@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dave Parfitt&#39;s blog</title>
-    <link>http://blog.metadave.net/</link>
+    <link>http://blog.metadave.net/index.xml</link>
     <description>Recent content on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -20,11 +20,9 @@
 
 &lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
 
-&lt;p&gt;I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I work remotely for &lt;a href=&#34;https://www.chef.io/&#34;&gt;Chef Software&lt;/a&gt; as a core engineer on &lt;a href=&#34;https://www.habitat.sh&#34;&gt;Habitat&lt;/a&gt;. Previously, I worked at &lt;a href=&#34;http://basho.com&#34;&gt;Basho&lt;/a&gt; on Riak &lt;a href=&#34;http://docs.basho.com/riak/kv/2.1.4/configuring/v3-multi-datacenter/&#34;&gt;multi data center replication&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I currently work remotely for &lt;a href=&#34;https://www.mozilla.org/&#34;&gt;Mozilla&lt;/a&gt; as a Site Reliability Engineer. Previously, I was an engineer at &lt;a href=&#34;http://www.chef.io&#34;&gt;Chef&lt;/a&gt;, where I worked as a core engineer on &lt;a href=&#34;https://www.habitat.sh&#34;&gt;Habitat&lt;/a&gt;. I also worked at &lt;a href=&#34;http://basho.com&#34;&gt;Basho&lt;/a&gt; on Riak &lt;a href=&#34;http://docs.basho.com/riak/kv/2.1.4/configuring/v3-multi-datacenter/&#34;&gt;multi data center replication&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m interested in the following languages: Rust, Erlang, D, OCaml, F#, C, Java, Scala, Clojure, Haskell, R.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m currently using the following tools: Docker, libsodium, Redis, RabbitMQ, Postgres, Zookeeper, Apache Storm.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m interested in the following languages: Rust, Erlang, D, OCaml, F#, C, Java, Go, Scala, Clojure, Haskell, R.&lt;/p&gt;
 </description>
     </item>
     

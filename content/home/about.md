@@ -8,10 +8,10 @@ weight = 0
 
 # Biography
 
-I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I work remotely for [Chef Software](https://www.chef.io/) as a core engineer on [Habitat](https://www.habitat.sh). Previously, I worked at [Basho](http://basho.com) on Riak [multi data center replication](http://docs.basho.com/riak/kv/2.1.4/configuring/v3-multi-datacenter/).
+I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I currently work remotely for [Mozilla](https://www.mozilla.org/) as a Site Reliability Engineer. Previously, I was an engineer at [Chef](http://www.chef.io), where I worked as a core engineer on [Habitat](https://www.habitat.sh). I also worked at [Basho](http://basho.com) on Riak [multi data center replication](http://docs.basho.com/riak/kv/2.1.4/configuring/v3-multi-datacenter/).
 
 
-I'm interested in the following languages: Rust, Erlang, D, OCaml, F#, C, Java, Scala, Clojure, Haskell, R.
+I'm interested in the following languages: Rust, Erlang, D, OCaml, F#, C, Java, Go, Scala, Clojure, Haskell, R.
 
-I'm currently using the following tools: Docker, libsodium, Redis, RabbitMQ, Postgres, Zookeeper, Apache Storm.
+
 
