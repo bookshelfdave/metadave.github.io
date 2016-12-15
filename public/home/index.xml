@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home-rsses on Dave Parfitt&#39;s blog</title>
-    <link>http://blog.metadave.net/home/index.xml</link>
+    <link>http://www.metadave.net/home/index.xml</link>
     <description>Recent content in Home-rsses on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.metadave.net/home/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.metadave.net/home/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://blog.metadave.net/home/about/</link>
+      <link>http://www.metadave.net/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.metadave.net/home/about/</guid>
+      <guid>http://www.metadave.net/home/about/</guid>
       <description>
 
 &lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;

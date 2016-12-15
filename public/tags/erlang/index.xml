@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dave Parfitt&#39;s blog</title>
-    <link>http://blog.metadave.net/tags/erlang/index.xml</link>
+    <link>http://www.metadave.net/tags/erlang/index.xml</link>
     <description>Recent content on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
-    <atom:link href="http://blog.metadave.net/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.metadave.net/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Chef Analytics</title>
-      <link>http://blog.metadave.net/project/chef_analytics/</link>
+      <link>http://www.metadave.net/project/chef_analytics/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.metadave.net/project/chef_analytics/</guid>
+      <guid>http://www.metadave.net/project/chef_analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>erln8</title>
-      <link>http://blog.metadave.net/project/erln8/</link>
+      <link>http://www.metadave.net/project/erln8/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.metadave.net/project/erln8/</guid>
+      <guid>http://www.metadave.net/project/erln8/</guid>
       <description>&lt;p&gt;erln8 is a Erlang version manager written in C.&lt;/p&gt;
 </description>
     </item>

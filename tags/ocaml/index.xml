@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dave Parfitt&#39;s blog</title>
-    <link>http://www.metadave.net/tags/riak/index.xml</link>
+    <link>http://blog.metadave.net/tags/ocaml/index.xml</link>
     <description>Recent content on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
-    <atom:link href="http://www.metadave.net/tags/riak/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.metadave.net/tags/ocaml/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Riak OCaml Client</title>
-      <link>http://www.metadave.net/project/riak-ocaml-client/</link>
+      <link>http://blog.metadave.net/project/riak-ocaml-client/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/project/riak-ocaml-client/</guid>
+      <guid>http://blog.metadave.net/project/riak-ocaml-client/</guid>
       <description>&lt;p&gt;riak-ocaml-client is a Riak Protobuffs-only client for OCaml.&lt;/p&gt;
 </description>
     </item>
