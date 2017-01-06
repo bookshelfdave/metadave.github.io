@@ -20,8 +20,8 @@ publishdir = "public"
 
 [params]
   name = "Dave Parfitt"
-  role = "Senior Software Engineer"
-  organization = "Chef Software"
+  role = "Site Reliability Engineer"
+  organization = "Mozilla"
   avatar = "me.jpg"
   email = "diparfitt@gmail.com"
 #  address = "Stanford AI Lab, Stanford University, California, 90210, USA."
