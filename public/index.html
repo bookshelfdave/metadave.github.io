@@ -192,6 +192,49 @@
                 
                 <div class="article-list-item" itemscope itemprop="blogPost">
                     
+                    <h3 class="article-title" itemprop="name"><a href="http://www.metadave.net/post/kubernetes_bash_prompt/" itemprop="url">A Kubernetes-aware bash prompt</a></h3>
+                    
+
+<div class="article-metadata">
+
+    <span class="article-date">
+        <time datetime="2017-01-06 09:23:08 -0500 EST" itemprop="datePublished">Fri, Jan 6, 2017</time>
+    </span>
+
+    
+    
+    
+    <span class="article-tags">
+        <i class="fa fa-tags"></i>
+        
+        <a class="article-tag-link" href="http://www.metadave.net/tags/kubernetes">kubernetes</a>, 
+        
+        <a class="article-tag-link" href="http://www.metadave.net/tags/bash">bash</a>
+        
+    </span>
+    
+    
+
+    
+
+</div>
+
+                    <p class="article-style" itemprop="articleBody">
+                        
+                            If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.
+Edit your ~/.bash_profile or ~/.bashrc with the following:
+function kube_context() { local ctx=$(kubectl config current-context 2&gt;&amp;1) if [ &quot;${ctx}&quot; != &quot;error: current-context is not set&quot; ]; then echo -n &quot;&lt;${ctx}&gt; &quot; fi } Blue='\e[0;34m' White='\e[0;37m' BRed='\e[1;31m' IWhite='\e[0;97m' LightBlue='\e[1;34m' PS1=&quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[\033[m\]\[$IWhite\]\$(__git_ps1)\[$White\]\$ &quot;  The snippet above yields the following prompt:
+                        
+                    </p>
+                    <p class="read-more">
+                        <a href="http://www.metadave.net/post/kubernetes_bash_prompt/" class="btn btn-primary btn-outline">
+                            Read more
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="article-list-item" itemscope itemprop="blogPost">
+                    
                     <h3 class="article-title" itemprop="name"><a href="http://www.metadave.net/post/habitat_hart_deep_dive/" itemprop="url">Habitat .HART file deep dive</a></h3>
                     
 
