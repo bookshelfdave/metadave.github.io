@@ -9,7 +9,7 @@ truncated = true
 +++
 
 
-I've been using [Git Crypt](https://www.agwa.name/projects/git-crypt/) to work with a few secure git repos [at work](https://mozilla.github.io/meao/). It works well and is easy to use. 
+I've been using [Git Crypt](https://www.agwa.name/projects/git-crypt/) with a few secure git repos [at work](https://mozilla.github.io/meao/). It works well and is easy to use. 
 
 The one thing that occasionally wakes me up in the middle of the night is wondering if I've locked a repo when I'm finished with it. To help with this issue, I threw together a quick `bash` function using `at` and `wall`. I use this on both Debian Linux and OSX.
 
