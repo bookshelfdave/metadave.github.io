@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
-    <lastBuildDate>Fri, 06 Jan 2017 09:48:32 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 08 Mar 2017 09:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.metadave.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Automatically locking a git crypt repo</title>
+      <link>http://www.metadave.net/post/git_crypt_autolock/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0000</pubDate>
+      
+      <guid>http://www.metadave.net/post/git_crypt_autolock/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;https://www.agwa.name/projects/git-crypt/&#34;&gt;Git Crypt&lt;/a&gt; to work with a few secure git repos &lt;a href=&#34;https://mozilla.github.io/meao/&#34;&gt;at work&lt;/a&gt;. It works well and is easy to use.&lt;/p&gt;
+
+&lt;p&gt;The one thing that occasionally wakes me up in the middle of the night is wondering if I&amp;rsquo;ve locked a repo when I&amp;rsquo;m finished with it. To help with this issue, I threw together a quick &lt;code&gt;bash&lt;/code&gt; function using &lt;code&gt;at&lt;/code&gt; and &lt;code&gt;wall&lt;/code&gt;. I use this on both Debian Linux and OSX.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git_crypt_autolock() {
+    PROJECT_ROOT=$(git rev-parse --show-toplevel)
+    SLEEP_TIME=&amp;quot;2 hours&amp;quot;
+    echo &amp;quot;Automatically locking ${PROJECT_ROOT} in ${SLEEP_TIME}&amp;quot;
+    at now + &amp;quot;${SLEEP_TIME}&amp;quot; &amp;lt;&amp;lt;EOF
+cd ${PROJECT_ROOT} &amp;amp;&amp;amp; git crypt lock
+wall &amp;lt;&amp;lt;&amp;lt; &amp;quot;git crypt automatically locked in ${PROJECT_ROOT}&amp;quot;
+EOF
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the sleep time to whatever you need, it follows the &lt;code&gt;at&lt;/code&gt; time specification. I&amp;rsquo;m sure this could be called via alias/git alias, but it works as is for me and keeps me sleeping at night.&lt;/p&gt;
+
+&lt;h4 id=&#34;a-note-on-enabling-the-atrun-daemon-in-macos&#34;&gt;A note on enabling the &lt;code&gt;atrun&lt;/code&gt; daemon in MacOS:&lt;/h4&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t recieve notifications in OSX, make sure the &lt;code&gt;atrun&lt;/code&gt; daemon is enabled.&lt;/p&gt;
+
+&lt;p&gt;See also: &lt;code&gt;man atrun&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;On MacOS Sierra, this command enabled the atrun daemon for me:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.atrun.plist
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://github.com/julienXX/terminal-notifier/issues/200&#34;&gt;non-trivial&lt;/a&gt; to send a proper notification in OSX from an &lt;code&gt;at&lt;/code&gt; script. Let me know if you get it working ;-)&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>A Kubernetes-aware bash prompt</title>
