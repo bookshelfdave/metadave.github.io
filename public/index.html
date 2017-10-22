@@ -122,7 +122,7 @@
 
 <h1 id="biography">Biography</h1>
 
-<p>I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I currently work remotely for <a href="https://www.mozilla.org/">Mozilla</a> as a Site Reliability Engineer. Previously, I was an engineer at <a href="http://www.chef.io">Chef</a>, where I worked as a core engineer on <a href="https://www.habitat.sh">Habitat</a>. I also worked at <a href="http://basho.com">Basho</a> on Riak <a href="http://docs.basho.com/riak/kv/2.1.4/configuring/v3-multi-datacenter/">multi data center replication</a>.</p>
+<p>I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I currently work remotely for <a href="https://www.mozilla.org/">Mozilla</a> as a Senior Site Reliability Engineer, where I design and run global infrastructure for <a href="https://www.mozilla.org">mozilla.org</a> and <a href="https://developer.mozilla.org">MDN</a> on Kubernetes. Previously, I worked at <a href="http://www.chef.io">Chef</a>, where I was a core engineer on <a href="https://www.habitat.sh">Habitat</a> and an engineering lead for <a href="https://docs.chef.io/analytics.html">Chef Analytics</a>. I also worked at <a href="http://basho.com">Basho</a> on Riak <a href="http://docs.basho.com/riak/kv/2.1.4/configuring/v3-multi-datacenter/">multi data center replication</a>.</p>
 
 <p>I&rsquo;m interested in the following languages: Rust, Erlang, D, OCaml, F#, C, Java, Go, Scala, Clojure, Haskell, R.</p>
 
@@ -264,6 +264,9 @@ The one thing that occasionally wakes me up in the middle of the night is wonder
                     <p class="article-style" itemprop="articleBody">
                         
                             If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.
+Edit your ~/.bash_profile or ~/.bashrc with the following:
+function kube_context() { # could have used $?, but it was easier with a string compare local ctx=$(kubectl config current-context 2&gt;&amp;1) if [ &quot;${ctx}&quot; != &quot;error: current-context is not set&quot; ]; then echo -n &quot;&lt;${ctx}&gt; &quot; fi } Blue='\e[0;34m' # Blue White='\e[0;37m' # White BRed='\e[1;31m' # Red IWhite='\e[0;97m' # White LightBlue='\e[1;34m' PS1=&quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[\033[m\]\[$IWhite\]\$(__git_ps1)\[$White\]\$ &quot;  The snippet above yields the following prompt:
+                        
                     </p>
                     <p class="read-more">
                         <a href="https://www.metadave.net/post/kubernetes_bash_prompt/" class="btn btn-primary btn-outline">
