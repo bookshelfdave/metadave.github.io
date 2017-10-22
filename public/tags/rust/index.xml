@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on Dave Parfitt&#39;s blog</title>
-    <link>http://www.metadave.net/tags/rust/index.xml</link>
+    <link>https://www.metadave.net/tags/rust/index.xml</link>
     <description>Recent content in Rust on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
-    <atom:link href="http://www.metadave.net/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.metadave.net/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Habitat .HART file deep dive</title>
-      <link>http://www.metadave.net/post/habitat_hart_deep_dive/</link>
+      <link>https://www.metadave.net/post/habitat_hart_deep_dive/</link>
       <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
       
-      <guid>http://www.metadave.net/post/habitat_hart_deep_dive/</guid>
+      <guid>https://www.metadave.net/post/habitat_hart_deep_dive/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://vimeo.com/174718777&#34;&gt;&lt;img src=&#34;http://i.imgur.com/AKiJK2K.png&#34; alt=&#34;Habitat .HART file deep dive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>QuickCheck &#43; Rust demo</title>
-      <link>http://www.metadave.net/post/quickcheck_rust/</link>
+      <link>https://www.metadave.net/post/quickcheck_rust/</link>
       <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
       
-      <guid>http://www.metadave.net/post/quickcheck_rust/</guid>
+      <guid>https://www.metadave.net/post/quickcheck_rust/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://vimeo.com/177578682&#34;&gt;&lt;img src=&#34;http://i.imgur.com/eKamCk4.png&#34; alt=&#34;QuickCheck + Rust demo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Habitat</title>
-      <link>http://www.metadave.net/project/habitat/</link>
+      <link>https://www.metadave.net/project/habitat/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/project/habitat/</guid>
+      <guid>https://www.metadave.net/project/habitat/</guid>
       <description>&lt;p&gt;Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.&lt;/p&gt;
 
 &lt;p&gt;Habitat is an open source project, and we’d love for you to get involved.&lt;/p&gt;

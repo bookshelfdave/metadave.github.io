@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic">
+    <meta name="generator" content="Hugo 0.18.1" />
+    <meta name="author" content="Dave Parfitt">
+    <meta name="description" content="Site Reliability Engineer">
+
+    <link rel="stylesheet" href="https://www.metadave.net/css/highlight.min.css">
+    <link rel="stylesheet" href="https://www.metadave.net/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.metadave.net/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.metadave.net/css/academicons.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+    <link rel="stylesheet" href="https://www.metadave.net/css/hugo-academic.css">
+    
+
+
+    <link rel="shortcut icon" href="https://www.metadave.net/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.metadave.net/post/kubernetes_bash_prompt/">
+
+    <title>A Kubernetes-aware bash prompt | Dave Parfitt&#39;s blog</title>
+
+</head>
+<body id="top">
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.metadave.net/">Dave Parfitt&#39;s blog</a>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="nav-item"><a href="https://www.metadave.net/#top">Home</a></li>
+                
+                <li class="nav-item"><a href="https://www.metadave.net/#posts">Posts</a></li>
+                
+                <li class="nav-item"><a href="https://www.metadave.net/#projects">Projects</a></li>
+                
+                <li class="nav-item"><a href="https://www.metadave.net/#contact">Contact</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        
+
+        <h1 itemprop="name">A Kubernetes-aware bash prompt</h1>
+
+        
+
+<div class="article-metadata">
+
+    <span class="article-date">
+        <time datetime="2017-01-06 09:48:32 -0500 EST" itemprop="datePublished">Fri, Jan 6, 2017</time>
+    </span>
+
+    
+    
+    
+    <span class="article-tags">
+        <i class="fa fa-tags"></i>
+        
+        <a class="article-tag-link" href="https://www.metadave.net/tags/kubernetes">kubernetes</a>, 
+        
+        <a class="article-tag-link" href="https://www.metadave.net/tags/bash">bash</a>
+        
+    </span>
+    
+    
+
+    
+        
+<div class="share-box">
+    <ul class="share">
+        <li>
+            <a class="facebook" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.metadave.net%2fpost%2fkubernetes_bash_prompt%2f" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=A%20Kubernetes-aware%20bash%20prompt&amp;url=https%3a%2f%2fwww.metadave.net%2fpost%2fkubernetes_bash_prompt%2f" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.metadave.net%2fpost%2fkubernetes_bash_prompt%2f&amp;title=A%20Kubernetes-aware%20bash%20prompt" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fwww.metadave.net%2fpost%2fkubernetes_bash_prompt%2f&amp;title=A%20Kubernetes-aware%20bash%20prompt" target="_blank">
+                <i class="fa fa-weibo"></i>
+            </a>
+        </li>
+        <li>
+            <a class="email" href="mailto:?subject=A%20Kubernetes-aware%20bash%20prompt&amp;body=https%3a%2f%2fwww.metadave.net%2fpost%2fkubernetes_bash_prompt%2f">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    
+
+</div>
+
+
+        <div class="article-style" itemprop="articleBody">
+            <p>If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.</p>
+
+<p>Edit your <code>~/.bash_profile</code> or <code>~/.bashrc</code> with the following:</p>
+
+<pre><code>function kube_context() {
+    # could have used $?, but it was easier with a string compare
+    local ctx=$(kubectl config current-context 2&gt;&amp;1)
+    if [ &quot;${ctx}&quot; != &quot;error: current-context is not set&quot; ]; then
+        echo -n &quot;&lt;${ctx}&gt; &quot;
+    fi
+}
+
+Blue='\e[0;34m'         # Blue
+White='\e[0;37m'        # White
+BRed='\e[1;31m'         # Red
+IWhite='\e[0;97m'       # White
+LightBlue='\e[1;34m'
+
+PS1=&quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[\033[m\]\[$IWhite\]\$(__git_ps1)\[$White\]\$ &quot;
+</code></pre>
+
+<p>The snippet above yields the following prompt:</p>
+
+<p><img src="http://i.imgur.com/xk7a98Y.png" alt="alt" /></p>
+
+<p>The key part of the <code>PS1</code> value above is <code>\$(kube_context)</code>, which <em>must</em> start with the <code>\</code> character, or it won&rsquo;t refresh after it&rsquo;s initial run.</p>
+
+        </div>
+
+    </article>
+
+    <nav>
+    <ul class="pager">
+        
+        <li class="previous"><a href="https://www.metadave.net/post/habitat_hart_deep_dive/"><span aria-hidden="true">&larr;</span> Habitat .HART file deep dive</a></li>
+        
+
+        
+        <li class="next"><a href="https://www.metadave.net/post/git_crypt_autolock/">Automatically locking a git crypt repo <span aria-hidden="true">&rarr;</span></a></li>
+        
+    </ul>
+</nav>
+
+    
+<section id="comments">
+    <div id="disqus_thread">
+        
+    </div>
+</section>
+
+
+
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            &copy; 2016 Dave Parfitt &middot; 
+
+            Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="https://www.metadave.net/js/jquery-1.12.3.min.js"></script>
+        <script src="https://www.metadave.net/js/bootstrap.min.js"></script>
+        <script src="https://www.metadave.net/js/hugo-academic.js"></script>
+        
+
+        
+
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        
+        
+
+    </body>
+</html>
+

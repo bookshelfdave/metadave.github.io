@@ -1,4 +1,4 @@
-baseurl = "http://www.metadave.net/"
+baseurl = "https://www.metadave.net/"
 title = "Dave Parfitt's blog"
 copyright = "&copy; 2016 Dave Parfitt"
 languageCode = "en-us"

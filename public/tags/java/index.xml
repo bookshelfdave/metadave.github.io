@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Dave Parfitt&#39;s blog</title>
-    <link>http://www.metadave.net/tags/java/index.xml</link>
+    <link>https://www.metadave.net/tags/java/index.xml</link>
     <description>Recent content in Java on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
-    <atom:link href="http://www.metadave.net/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.metadave.net/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Chef Analytics</title>
-      <link>http://www.metadave.net/project/chef_analytics/</link>
+      <link>https://www.metadave.net/project/chef_analytics/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/project/chef_analytics/</guid>
+      <guid>https://www.metadave.net/project/chef_analytics/</guid>
       <description></description>
     </item>
     

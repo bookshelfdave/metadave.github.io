@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dave Parfitt&#39;s blog</title>
-    <link>http://www.metadave.net/index.xml</link>
+    <link>https://www.metadave.net/index.xml</link>
     <description>Recent content on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
     <lastBuildDate>Wed, 08 Mar 2017 09:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.metadave.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.metadave.net/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Automatically locking a git crypt repo</title>
-      <link>http://www.metadave.net/post/git_crypt_autolock/</link>
+      <link>https://www.metadave.net/post/git_crypt_autolock/</link>
       <pubDate>Wed, 08 Mar 2017 09:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/post/git_crypt_autolock/</guid>
+      <guid>https://www.metadave.net/post/git_crypt_autolock/</guid>
       <description>
 
-&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;https://www.agwa.name/projects/git-crypt/&#34;&gt;Git Crypt&lt;/a&gt; to work with a few secure git repos &lt;a href=&#34;https://mozilla.github.io/meao/&#34;&gt;at work&lt;/a&gt;. It works well and is easy to use.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;https://www.agwa.name/projects/git-crypt/&#34;&gt;Git Crypt&lt;/a&gt; with a few secure git repos &lt;a href=&#34;https://mozilla.github.io/meao/&#34;&gt;at work&lt;/a&gt;. It works well and is easy to use.&lt;/p&gt;
 
 &lt;p&gt;The one thing that occasionally wakes me up in the middle of the night is wondering if I&amp;rsquo;ve locked a repo when I&amp;rsquo;m finished with it. To help with this issue, I threw together a quick &lt;code&gt;bash&lt;/code&gt; function using &lt;code&gt;at&lt;/code&gt; and &lt;code&gt;wall&lt;/code&gt;. I use this on both Debian Linux and OSX.&lt;/p&gt;
 
@@ -54,10 +54,10 @@ EOF
     
     <item>
       <title>A Kubernetes-aware bash prompt</title>
-      <link>http://www.metadave.net/post/kubernetes_bash_prompt/</link>
+      <link>https://www.metadave.net/post/kubernetes_bash_prompt/</link>
       <pubDate>Fri, 06 Jan 2017 09:48:32 -0500</pubDate>
       
-      <guid>http://www.metadave.net/post/kubernetes_bash_prompt/</guid>
+      <guid>https://www.metadave.net/post/kubernetes_bash_prompt/</guid>
       <description>&lt;p&gt;If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.&lt;/p&gt;
 
 &lt;p&gt;Edit your &lt;code&gt;~/.bash_profile&lt;/code&gt; or &lt;code&gt;~/.bashrc&lt;/code&gt; with the following:&lt;/p&gt;
@@ -89,30 +89,30 @@ PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$B
     
     <item>
       <title>Habitat .HART file deep dive</title>
-      <link>http://www.metadave.net/post/habitat_hart_deep_dive/</link>
+      <link>https://www.metadave.net/post/habitat_hart_deep_dive/</link>
       <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
       
-      <guid>http://www.metadave.net/post/habitat_hart_deep_dive/</guid>
+      <guid>https://www.metadave.net/post/habitat_hart_deep_dive/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://vimeo.com/174718777&#34;&gt;&lt;img src=&#34;http://i.imgur.com/AKiJK2K.png&#34; alt=&#34;Habitat .HART file deep dive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>QuickCheck &#43; Rust demo</title>
-      <link>http://www.metadave.net/post/quickcheck_rust/</link>
+      <link>https://www.metadave.net/post/quickcheck_rust/</link>
       <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
       
-      <guid>http://www.metadave.net/post/quickcheck_rust/</guid>
+      <guid>https://www.metadave.net/post/quickcheck_rust/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://vimeo.com/177578682&#34;&gt;&lt;img src=&#34;http://i.imgur.com/eKamCk4.png&#34; alt=&#34;QuickCheck + Rust demo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>about</title>
-      <link>http://www.metadave.net/home/about/</link>
+      <link>https://www.metadave.net/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/home/about/</guid>
+      <guid>https://www.metadave.net/home/about/</guid>
       <description>
 
 &lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
@@ -125,10 +125,10 @@ PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$B
     
     <item>
       <title>Habitat</title>
-      <link>http://www.metadave.net/project/habitat/</link>
+      <link>https://www.metadave.net/project/habitat/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/project/habitat/</guid>
+      <guid>https://www.metadave.net/project/habitat/</guid>
       <description>&lt;p&gt;Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.&lt;/p&gt;
 
 &lt;p&gt;Habitat is an open source project, and we’d love for you to get involved.&lt;/p&gt;
@@ -137,29 +137,29 @@ PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$B
     
     <item>
       <title>Chef Analytics</title>
-      <link>http://www.metadave.net/project/chef_analytics/</link>
+      <link>https://www.metadave.net/project/chef_analytics/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/project/chef_analytics/</guid>
+      <guid>https://www.metadave.net/project/chef_analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>erln8</title>
-      <link>http://www.metadave.net/project/erln8/</link>
+      <link>https://www.metadave.net/project/erln8/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/project/erln8/</guid>
+      <guid>https://www.metadave.net/project/erln8/</guid>
       <description>&lt;p&gt;erln8 is a Erlang version manager written in C.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Riak OCaml Client</title>
-      <link>http://www.metadave.net/project/riak-ocaml-client/</link>
+      <link>https://www.metadave.net/project/riak-ocaml-client/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.metadave.net/project/riak-ocaml-client/</guid>
+      <guid>https://www.metadave.net/project/riak-ocaml-client/</guid>
       <description>&lt;p&gt;riak-ocaml-client is a Riak Protobuffs-only client for OCaml.&lt;/p&gt;
 </description>
     </item>

@@ -2,177 +2,177 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.metadave.net/post/git_crypt_autolock/</loc>
+    <loc>https://www.metadave.net/post/git_crypt_autolock/</loc>
     <lastmod>2017-03-08T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/post/kubernetes_bash_prompt/</loc>
+    <loc>https://www.metadave.net/post/kubernetes_bash_prompt/</loc>
     <lastmod>2017-01-06T09:48:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/post/habitat_hart_deep_dive/</loc>
+    <loc>https://www.metadave.net/post/habitat_hart_deep_dive/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/post/quickcheck_rust/</loc>
+    <loc>https://www.metadave.net/post/quickcheck_rust/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/home/about/</loc>
+    <loc>https://www.metadave.net/home/about/</loc>
     <lastmod>2016-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/project/habitat/</loc>
+    <loc>https://www.metadave.net/project/habitat/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/project/chef_analytics/</loc>
+    <loc>https://www.metadave.net/project/chef_analytics/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/project/erln8/</loc>
+    <loc>https://www.metadave.net/project/erln8/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/project/riak-ocaml-client/</loc>
+    <loc>https://www.metadave.net/project/riak-ocaml-client/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/analytics/</loc>
+    <loc>https://www.metadave.net/tags/analytics/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/antlr/</loc>
+    <loc>https://www.metadave.net/tags/antlr/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/bash/</loc>
+    <loc>https://www.metadave.net/tags/bash/</loc>
     <lastmod>2017-03-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/c/</loc>
+    <loc>https://www.metadave.net/tags/c/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/containers/</loc>
+    <loc>https://www.metadave.net/tags/containers/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/</loc>
+    <loc>https://www.metadave.net/</loc>
     <lastmod>2017-03-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/docker/</loc>
+    <loc>https://www.metadave.net/tags/docker/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/erlang/</loc>
+    <loc>https://www.metadave.net/tags/erlang/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/git/</loc>
+    <loc>https://www.metadave.net/tags/git/</loc>
     <lastmod>2017-03-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/habitat/</loc>
+    <loc>https://www.metadave.net/tags/habitat/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/home/</loc>
+    <loc>https://www.metadave.net/home/</loc>
     <lastmod>2016-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/java/</loc>
+    <loc>https://www.metadave.net/tags/java/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/kubernetes/</loc>
+    <loc>https://www.metadave.net/tags/kubernetes/</loc>
     <lastmod>2017-01-06T09:48:32-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/ocaml/</loc>
+    <loc>https://www.metadave.net/tags/ocaml/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/post/</loc>
+    <loc>https://www.metadave.net/post/</loc>
     <lastmod>2017-03-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/project/</loc>
+    <loc>https://www.metadave.net/project/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/quickcheck/</loc>
+    <loc>https://www.metadave.net/tags/quickcheck/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/riak/</loc>
+    <loc>https://www.metadave.net/tags/riak/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/rust/</loc>
+    <loc>https://www.metadave.net/tags/rust/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/storm/</loc>
+    <loc>https://www.metadave.net/tags/storm/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/</loc>
+    <loc>https://www.metadave.net/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.metadave.net/tags/testing/</loc>
+    <loc>https://www.metadave.net/tags/testing/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
     <priority>0</priority>
   </url>
