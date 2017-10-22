@@ -264,9 +264,6 @@ The one thing that occasionally wakes me up in the middle of the night is wonder
                     <p class="article-style" itemprop="articleBody">
                         
                             If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.
-Edit your ~/.bash_profile or ~/.bashrc with the following:
-function kube_context() { # could have used $?, but it was easier with a string compare local ctx=$(kubectl config current-context 2&gt;&amp;1) if [ &quot;${ctx}&quot; != &quot;error: current-context is not set&quot; ]; then echo -n &quot;&lt;${ctx}&gt; &quot; fi } Blue='\e[0;34m' # Blue White='\e[0;37m' # White BRed='\e[1;31m' # Red IWhite='\e[0;97m' # White LightBlue='\e[1;34m' PS1=&quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[\033[m\]\[$IWhite\]\$(__git_ps1)\[$White\]\$ &quot;  The snippet above yields the following prompt:
-                        
                     </p>
                     <p class="read-more">
                         <a href="https://www.metadave.net/post/kubernetes_bash_prompt/" class="btn btn-primary btn-outline">
