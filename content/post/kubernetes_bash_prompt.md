@@ -34,6 +34,6 @@ PS1="\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[
 
 The snippet above yields the following prompt:
 
-![alt](http://i.imgur.com/xk7a98Y.png)
+![alt](https://i.imgur.com/xk7a98Y.png)
 
 The key part of the `PS1` value above is `\$(kube_context)`, which _must_ start with the `\` character, or it won't refresh after it's initial run.

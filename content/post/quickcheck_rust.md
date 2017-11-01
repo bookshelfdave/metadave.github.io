@@ -7,4 +7,4 @@ title = "QuickCheck + Rust demo"
 +++
 
 
-[![QuickCheck + Rust demo](http://i.imgur.com/eKamCk4.png)](https://vimeo.com/177578682)
+[![QuickCheck + Rust demo](https://i.imgur.com/eKamCk4.png)](https://vimeo.com/177578682)
