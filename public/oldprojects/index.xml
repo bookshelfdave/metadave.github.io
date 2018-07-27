@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oldprojects on Dave Parfitt&#39;s blog</title>
+    <link>https://www.metadave.net/oldprojects/</link>
+    <description>Recent content in Oldprojects on Dave Parfitt&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.metadave.net/oldprojects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Habitat</title>
+      <link>https://www.metadave.net/oldprojects/habitat/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/oldprojects/habitat/</guid>
+      <description>Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.
+Habitat is an open source project, and we’d love for you to get involved.</description>
+    </item>
+    
+    <item>
+      <title>Chef Analytics</title>
+      <link>https://www.metadave.net/oldprojects/chef_analytics/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/oldprojects/chef_analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>erln8</title>
+      <link>https://www.metadave.net/oldprojects/erln8/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/oldprojects/erln8/</guid>
+      <description>erln8 is a Erlang version manager written in C.</description>
+    </item>
+    
+    <item>
+      <title>Riak OCaml Client</title>
+      <link>https://www.metadave.net/oldprojects/riak-ocaml-client/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/oldprojects/riak-ocaml-client/</guid>
+      <description>riak-ocaml-client is a Riak Protobuffs-only client for OCaml.</description>
+    </item>
+    
+  </channel>
+</rss>

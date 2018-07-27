@@ -35,10 +35,10 @@ function kube_context() { # could have used $?, but it was easier with a string 
     
     <item>
       <title>Habitat</title>
-      <link>https://www.metadave.net/project/habitat/</link>
+      <link>https://www.metadave.net/oldprojects/habitat/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.metadave.net/project/habitat/</guid>
+      <guid>https://www.metadave.net/oldprojects/habitat/</guid>
       <description>Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.
 Habitat is an open source project, and we’d love for you to get involved.</description>
     </item>

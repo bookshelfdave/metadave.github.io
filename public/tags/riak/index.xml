@@ -14,10 +14,10 @@
     
     <item>
       <title>Riak OCaml Client</title>
-      <link>https://www.metadave.net/project/riak-ocaml-client/</link>
+      <link>https://www.metadave.net/oldprojects/riak-ocaml-client/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://www.metadave.net/project/riak-ocaml-client/</guid>
+      <guid>https://www.metadave.net/oldprojects/riak-ocaml-client/</guid>
       <description>riak-ocaml-client is a Riak Protobuffs-only client for OCaml.</description>
     </item>
     
