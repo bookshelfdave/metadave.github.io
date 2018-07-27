@@ -2,109 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dave Parfitt&#39;s blog</title>
-    <link>https://www.metadave.net/index.xml</link>
+    <link>https://www.metadave.net/</link>
     <description>Recent content on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
     <lastBuildDate>Wed, 08 Mar 2017 09:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.metadave.net/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.metadave.net/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Automatically locking a git crypt repo</title>
-      <link>https://www.metadave.net/post/git_crypt_autolock/</link>
+      <link>https://www.metadave.net/oldposts/git_crypt_autolock/</link>
       <pubDate>Wed, 08 Mar 2017 09:00:00 +0000</pubDate>
       
-      <guid>https://www.metadave.net/post/git_crypt_autolock/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;https://www.agwa.name/projects/git-crypt/&#34;&gt;Git Crypt&lt;/a&gt; with a few secure git repos &lt;a href=&#34;https://mozilla.github.io/meao/&#34;&gt;at work&lt;/a&gt;. It works well and is easy to use.&lt;/p&gt;
-
-&lt;p&gt;The one thing that occasionally wakes me up in the middle of the night is wondering if I&amp;rsquo;ve locked a repo when I&amp;rsquo;m finished with it. To help with this issue, I threw together a quick &lt;code&gt;bash&lt;/code&gt; function using &lt;code&gt;at&lt;/code&gt; and &lt;code&gt;wall&lt;/code&gt;. I use this on both Debian Linux and OSX.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git_crypt_autolock() {
-    PROJECT_ROOT=$(git rev-parse --show-toplevel)
-    SLEEP_TIME=&amp;quot;2 hours&amp;quot;
-    echo &amp;quot;Automatically locking ${PROJECT_ROOT} in ${SLEEP_TIME}&amp;quot;
-    at now + &amp;quot;${SLEEP_TIME}&amp;quot; &amp;lt;&amp;lt;EOF
-cd ${PROJECT_ROOT} &amp;amp;&amp;amp; git crypt lock
-wall &amp;lt;&amp;lt;&amp;lt; &amp;quot;git crypt automatically locked in ${PROJECT_ROOT}&amp;quot;
-EOF
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Change the sleep time to whatever you need, it follows the &lt;code&gt;at&lt;/code&gt; time specification. I&amp;rsquo;m sure this could be called via alias/git alias, but it works as is for me and keeps me sleeping at night.&lt;/p&gt;
-
-&lt;h4 id=&#34;a-note-on-enabling-the-atrun-daemon-in-macos&#34;&gt;A note on enabling the &lt;code&gt;atrun&lt;/code&gt; daemon in MacOS:&lt;/h4&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t recieve notifications in OSX, make sure the &lt;code&gt;atrun&lt;/code&gt; daemon is enabled.&lt;/p&gt;
-
-&lt;p&gt;See also: &lt;code&gt;man atrun&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;On MacOS Sierra, this command enabled the atrun daemon for me:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.atrun.plist
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://github.com/julienXX/terminal-notifier/issues/200&#34;&gt;non-trivial&lt;/a&gt; to send a proper notification in OSX from an &lt;code&gt;at&lt;/code&gt; script. Let me know if you get it working ;-)&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <guid>https://www.metadave.net/oldposts/git_crypt_autolock/</guid>
+      <description>I&amp;rsquo;ve been using Git Crypt with a few secure git repos at work. It works well and is easy to use.
+The one thing that occasionally wakes me up in the middle of the night is wondering if I&amp;rsquo;ve locked a repo when I&amp;rsquo;m finished with it. To help with this issue, I threw together a quick bash function using at and wall. I use this on both Debian Linux and OSX.</description>
     </item>
     
     <item>
       <title>A Kubernetes-aware bash prompt</title>
-      <link>https://www.metadave.net/post/kubernetes_bash_prompt/</link>
+      <link>https://www.metadave.net/oldposts/kubernetes_bash_prompt/</link>
       <pubDate>Fri, 06 Jan 2017 09:48:32 -0500</pubDate>
       
-      <guid>https://www.metadave.net/post/kubernetes_bash_prompt/</guid>
-      <description>&lt;p&gt;If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.&lt;/p&gt;
-
-&lt;p&gt;Edit your &lt;code&gt;~/.bash_profile&lt;/code&gt; or &lt;code&gt;~/.bashrc&lt;/code&gt; with the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function kube_context() {
-    # could have used $?, but it was easier with a string compare
-    local ctx=$(kubectl config current-context 2&amp;gt;&amp;amp;1)
-    if [ &amp;quot;${ctx}&amp;quot; != &amp;quot;error: current-context is not set&amp;quot; ]; then
-        echo -n &amp;quot;&amp;lt;${ctx}&amp;gt; &amp;quot;
-    fi
-}
-
-Blue=&#39;\e[0;34m&#39;         # Blue
-White=&#39;\e[0;37m&#39;        # White
-BRed=&#39;\e[1;31m&#39;         # Red
-IWhite=&#39;\e[0;97m&#39;       # White
-LightBlue=&#39;\e[1;34m&#39;
-
-PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[\033[m\]\[$IWhite\]\$(__git_ps1)\[$White\]\$ &amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The snippet above yields the following prompt:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/xk7a98Y.png&#34; alt=&#34;alt&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The key part of the &lt;code&gt;PS1&lt;/code&gt; value above is &lt;code&gt;\$(kube_context)&lt;/code&gt;, which &lt;em&gt;must&lt;/em&gt; start with the &lt;code&gt;\&lt;/code&gt; character, or it won&amp;rsquo;t refresh after it&amp;rsquo;s initial run.&lt;/p&gt;
-</description>
+      <guid>https://www.metadave.net/oldposts/kubernetes_bash_prompt/</guid>
+      <description>If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.
+Edit your ~/.bash_profile or ~/.bashrc with the following:
+function kube_context() { # could have used $?, but it was easier with a string compare local ctx=$(kubectl config current-context 2&amp;gt;&amp;amp;1) if [ &amp;quot;${ctx}&amp;quot; != &amp;quot;error: current-context is not set&amp;quot; ]; then echo -n &amp;quot;&amp;lt;${ctx}&amp;gt; &amp;quot; fi } Blue=&#39;\e[0;34m&#39; # Blue White=&#39;\e[0;37m&#39; # White BRed=&#39;\e[1;31m&#39; # Red IWhite=&#39;\e[0;97m&#39; # White LightBlue=&#39;\e[1;34m&#39; PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[\033[m\]\[$IWhite\]\$(__git_ps1)\[$White\]\$ &amp;quot;  The snippet above yields the following prompt:</description>
     </item>
     
     <item>
       <title>Habitat .HART file deep dive</title>
-      <link>https://www.metadave.net/post/habitat_hart_deep_dive/</link>
+      <link>https://www.metadave.net/oldposts/habitat_hart_deep_dive/</link>
       <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
       
-      <guid>https://www.metadave.net/post/habitat_hart_deep_dive/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://vimeo.com/174718777&#34;&gt;&lt;img src=&#34;https://i.imgur.com/AKiJK2K.png&#34; alt=&#34;Habitat .HART file deep dive&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>https://www.metadave.net/oldposts/habitat_hart_deep_dive/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>QuickCheck &#43; Rust demo</title>
-      <link>https://www.metadave.net/post/quickcheck_rust/</link>
+      <link>https://www.metadave.net/oldposts/quickcheck_rust/</link>
       <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
       
-      <guid>https://www.metadave.net/post/quickcheck_rust/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://vimeo.com/177578682&#34;&gt;&lt;img src=&#34;https://i.imgur.com/eKamCk4.png&#34; alt=&#34;QuickCheck + Rust demo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>https://www.metadave.net/oldposts/quickcheck_rust/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -113,14 +57,7 @@ PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$B
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.metadave.net/home/about/</guid>
-      <description>
-
-&lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
-
-&lt;p&gt;I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I currently work remotely for &lt;a href=&#34;https://www.mozilla.org/&#34;&gt;Mozilla&lt;/a&gt; as a Senior Site Reliability Engineer, where I design and run global infrastructure for &lt;a href=&#34;https://www.mozilla.org&#34;&gt;mozilla.org&lt;/a&gt; and &lt;a href=&#34;https://developer.mozilla.org&#34;&gt;MDN&lt;/a&gt; on Kubernetes. Previously, I worked at &lt;a href=&#34;http://www.chef.io&#34;&gt;Chef&lt;/a&gt;, where I was a core engineer on &lt;a href=&#34;https://www.habitat.sh&#34;&gt;Habitat&lt;/a&gt; and an engineering lead for &lt;a href=&#34;https://docs.chef.io/analytics.html&#34;&gt;Chef Analytics&lt;/a&gt;. I also worked at &lt;a href=&#34;http://basho.com&#34;&gt;Basho&lt;/a&gt; on Riak &lt;a href=&#34;http://docs.basho.com/riak/kv/2.1.4/configuring/v3-multi-datacenter/&#34;&gt;multi data center replication&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m interested in the following languages: Rust, Erlang, D, OCaml, F#, C, Java, Go, Scala, Clojure, Haskell, R.&lt;/p&gt;
-</description>
+      <description>Biography I am a software engineer in Buffalo, NY with a focus on backend + distributed systems. I currently work remotely for Mozilla as a Senior Site Reliability Engineer, where I design and run global cloud infrastructure for mozilla.org and MDN on Kubernetes. Previously, I worked at Chef, where I was a core engineer on Habitat and an engineering lead for Chef Analytics. I also worked at Basho on Riak multi data center replication.</description>
     </item>
     
     <item>
@@ -129,10 +66,8 @@ PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$B
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.metadave.net/project/habitat/</guid>
-      <description>&lt;p&gt;Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.&lt;/p&gt;
-
-&lt;p&gt;Habitat is an open source project, and we’d love for you to get involved.&lt;/p&gt;
-</description>
+      <description>Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.
+Habitat is an open source project, and we’d love for you to get involved.</description>
     </item>
     
     <item>
@@ -150,8 +85,7 @@ PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$B
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://www.metadave.net/project/erln8/</guid>
-      <description>&lt;p&gt;erln8 is a Erlang version manager written in C.&lt;/p&gt;
-</description>
+      <description>erln8 is a Erlang version manager written in C.</description>
     </item>
     
     <item>
@@ -160,8 +94,7 @@ PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$B
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://www.metadave.net/project/riak-ocaml-client/</guid>
-      <description>&lt;p&gt;riak-ocaml-client is a Riak Protobuffs-only client for OCaml.&lt;/p&gt;
-</description>
+      <description>riak-ocaml-client is a Riak Protobuffs-only client for OCaml.</description>
     </item>
     
   </channel>

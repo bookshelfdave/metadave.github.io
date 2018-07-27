@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Containers on Dave Parfitt&#39;s blog</title>
-    <link>https://www.metadave.net/tags/containers/index.xml</link>
+    <link>https://www.metadave.net/tags/containers/</link>
     <description>Recent content in Containers on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
-    <atom:link href="https://www.metadave.net/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.metadave.net/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Habitat</title>
@@ -15,10 +18,8 @@
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.metadave.net/project/habitat/</guid>
-      <description>&lt;p&gt;Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.&lt;/p&gt;
-
-&lt;p&gt;Habitat is an open source project, and we’d love for you to get involved.&lt;/p&gt;
-</description>
+      <description>Habitat is a new approach to automation that focuses on the application instead of the infrastructure it runs on. With Habitat, the apps you build, deploy, and manage behave consistently in any runtime — bare metal, VMs, containers, and PaaS. You&amp;rsquo;ll spend less time on the environment and more time building features.
+Habitat is an open source project, and we’d love for you to get involved.</description>
     </item>
     
   </channel>

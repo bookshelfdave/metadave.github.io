@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.metadave.net/post/git_crypt_autolock/</loc>
+    <loc>https://www.metadave.net/oldposts/git_crypt_autolock/</loc>
     <lastmod>2017-03-08T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.metadave.net/post/kubernetes_bash_prompt/</loc>
+    <loc>https://www.metadave.net/oldposts/kubernetes_bash_prompt/</loc>
     <lastmod>2017-01-06T09:48:32-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.metadave.net/post/habitat_hart_deep_dive/</loc>
+    <loc>https://www.metadave.net/oldposts/habitat_hart_deep_dive/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.metadave.net/post/quickcheck_rust/</loc>
+    <loc>https://www.metadave.net/oldposts/quickcheck_rust/</loc>
     <lastmod>2017-01-04T14:46:33-05:00</lastmod>
   </url>
   
@@ -67,6 +68,11 @@
   <url>
     <loc>https://www.metadave.net/tags/c/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.metadave.net/categories/</loc>
     <priority>0</priority>
   </url>
   
@@ -131,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.metadave.net/post/</loc>
+    <loc>https://www.metadave.net/oldposts/</loc>
     <lastmod>2017-03-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -168,6 +174,7 @@
   
   <url>
     <loc>https://www.metadave.net/tags/</loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

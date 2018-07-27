@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Dave Parfitt&#39;s blog</title>
+    <link>https://www.metadave.net/tags/</link>
+    <description>Recent content in Tags on Dave Parfitt&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
+    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.metadave.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Analytics</title>
+      <link>https://www.metadave.net/tags/analytics/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Antlr</title>
+      <link>https://www.metadave.net/tags/antlr/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/antlr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bash</title>
+      <link>https://www.metadave.net/tags/bash/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://www.metadave.net/tags/c/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containers</title>
+      <link>https://www.metadave.net/tags/containers/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://www.metadave.net/tags/docker/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Erlang</title>
+      <link>https://www.metadave.net/tags/erlang/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/erlang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://www.metadave.net/tags/git/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Habitat</title>
+      <link>https://www.metadave.net/tags/habitat/</link>
+      <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/tags/habitat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://www.metadave.net/tags/java/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://www.metadave.net/tags/kubernetes/</link>
+      <pubDate>Fri, 06 Jan 2017 09:48:32 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ocaml</title>
+      <link>https://www.metadave.net/tags/ocaml/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/ocaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quickcheck</title>
+      <link>https://www.metadave.net/tags/quickcheck/</link>
+      <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/tags/quickcheck/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Riak</title>
+      <link>https://www.metadave.net/tags/riak/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/riak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://www.metadave.net/tags/rust/</link>
+      <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storm</title>
+      <link>https://www.metadave.net/tags/storm/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/tags/storm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://www.metadave.net/tags/testing/</link>
+      <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

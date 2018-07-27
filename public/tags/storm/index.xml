@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Storm on Dave Parfitt&#39;s blog</title>
-    <link>https://www.metadave.net/tags/storm/index.xml</link>
+    <link>https://www.metadave.net/tags/storm/</link>
     <description>Recent content in Storm on Dave Parfitt&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
-    <atom:link href="https://www.metadave.net/tags/storm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.metadave.net/tags/storm/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Chef Analytics</title>

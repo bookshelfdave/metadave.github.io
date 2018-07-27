@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oldposts on Dave Parfitt&#39;s blog</title>
+    <link>https://www.metadave.net/oldposts/</link>
+    <description>Recent content in Oldposts on Dave Parfitt&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Dave Parfitt</copyright>
+    <lastBuildDate>Wed, 08 Mar 2017 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.metadave.net/oldposts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automatically locking a git crypt repo</title>
+      <link>https://www.metadave.net/oldposts/git_crypt_autolock/</link>
+      <pubDate>Wed, 08 Mar 2017 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.metadave.net/oldposts/git_crypt_autolock/</guid>
+      <description>I&amp;rsquo;ve been using Git Crypt with a few secure git repos at work. It works well and is easy to use.
+The one thing that occasionally wakes me up in the middle of the night is wondering if I&amp;rsquo;ve locked a repo when I&amp;rsquo;m finished with it. To help with this issue, I threw together a quick bash function using at and wall. I use this on both Debian Linux and OSX.</description>
+    </item>
+    
+    <item>
+      <title>A Kubernetes-aware bash prompt</title>
+      <link>https://www.metadave.net/oldposts/kubernetes_bash_prompt/</link>
+      <pubDate>Fri, 06 Jan 2017 09:48:32 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/oldposts/kubernetes_bash_prompt/</guid>
+      <description>If you manage multiple Kubernetes deployments, this little trick can show you the current Kubernetes context as part of your bash prompt.
+Edit your ~/.bash_profile or ~/.bashrc with the following:
+function kube_context() { # could have used $?, but it was easier with a string compare local ctx=$(kubectl config current-context 2&amp;gt;&amp;amp;1) if [ &amp;quot;${ctx}&amp;quot; != &amp;quot;error: current-context is not set&amp;quot; ]; then echo -n &amp;quot;&amp;lt;${ctx}&amp;gt; &amp;quot; fi } Blue=&#39;\e[0;34m&#39; # Blue White=&#39;\e[0;37m&#39; # White BRed=&#39;\e[1;31m&#39; # Red IWhite=&#39;\e[0;97m&#39; # White LightBlue=&#39;\e[1;34m&#39; PS1=&amp;quot;\[$Blue\]\t\[$BWhite\]\[$LightBlue\] \$(kube_context)\[$BRed\]\[$BRed\]\w\[\033[m\]\[$IWhite\]\$(__git_ps1)\[$White\]\$ &amp;quot;  The snippet above yields the following prompt:</description>
+    </item>
+    
+    <item>
+      <title>Habitat .HART file deep dive</title>
+      <link>https://www.metadave.net/oldposts/habitat_hart_deep_dive/</link>
+      <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/oldposts/habitat_hart_deep_dive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QuickCheck &#43; Rust demo</title>
+      <link>https://www.metadave.net/oldposts/quickcheck_rust/</link>
+      <pubDate>Wed, 04 Jan 2017 14:46:33 -0500</pubDate>
+      
+      <guid>https://www.metadave.net/oldposts/quickcheck_rust/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
